@@ -33,13 +33,13 @@ This website will be built using the typically following technologies:
 - **Mobile-friendly**: Optimization for mobile devices 📱
 - **API Integration**: An API that allows you to use the randomizer in other projects 🔌
 - **Custom Themes**: The ability to customize the website's design 🎨✨
-- **A way to donate me or for this website 💡
+- **Donating:** A way to donate me or for this website 💡
 
 
 I’m excited to hear your feedback and to keep improving this website! 🚀
 
 ## 💬 **Contact**
-**DM me at GitHub
+**DM** me at GitHub
 
 ---
 
