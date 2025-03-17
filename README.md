@@ -38,8 +38,7 @@ This website will be built using the typically following technologies:
 
 I’m excited to hear your feedback and to keep improving this website! 🚀
 
-## 💬 **Contact**
-**DM** me at GitHub
+**IT'S NOT FINISHED!!**
 
 ---
 
