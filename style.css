@@ -1,1 +1,64 @@
+body {
+    background-color: #10002e; 
+    color: #7d7d7d; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
+.magical-title {
+    font-family: 'Mystery Quest', cursive; 
+    color: #9370DB; 
+    text-align: center;
+    margin-top: 60px;
+    font-size: 6em;
+}
+
+.myButton {
+    background: linear-gradient(to bottom, #e6e6e6 5%, #575757 100%);
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    border: 5px solid #453445;
+    display: block;
+    cursor: pointer;
+    color: #7a1a7a;
+    font-family: 'Mystery Quest', cursive;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 80px; 
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px auto 0;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #575757 5%, #e6e6e6 100%);
+    background-color: #575757;
+}
+
+.myButton:active {
+    position: relative;
+    top: 2px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+.centered-image {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
