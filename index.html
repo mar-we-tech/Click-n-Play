@@ -9,17 +9,25 @@
   <title>PickNPlay</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1 class="magical-title">Click'N'Play</h1>
-    <h2>Are you good enough to troll but still carry the whole game? Show me what you've got! (this website is on building and not finished!)</h2>
+    <h1 class="magical-title title-box">Click'N'Play</h1>
+    <h1 class="paragraph-box">Are you good enough to troll but still carry the whole game? Show me what you've got!</h1>
   </header>
   <main>
     <div class="image-container">
-      <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="?">
-      <a href="#" class="myButton" onclick="rerollImage()">REROLL</a>
+      <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="Reroll Me Wallpaper">
+      <a href="#" class="myButton" onclick="rerollImage()"><i class="fa-solid fa-dice"></i></a>
+    </div>
+    <div class="flex-container">
+      <div class="child-element" onclick="pinRole('everything')"><img src="https://i.imgur.com/xRlUdOx.jpeg" alt="Everything Icon"></div>
+      <div class="child-element" onclick="pinRole('toplane')"><img src="https://i.imgur.com/sOGsl1G.jpeg" alt="Toplane Icon"></div>
+      <div class="child-element" onclick="pinRole('jungle')"><img src="https://i.imgur.com/C0kIg89.jpeg" alt="Jungle Icon"></div>
+      <div class="child-element" onclick="pinRole('midlane')"><img src="https://i.imgur.com/hQHCr9p.jpeg" alt="Midlane Icon"></div>
+      <div class="child-element" onclick="pinRole('botlane')"><img src="https://i.imgur.com/6xRr06B.jpeg" alt="Botlane Icon"></div>
     </div>
   </main>
   <footer>
