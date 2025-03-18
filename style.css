@@ -27,7 +27,7 @@ header {
     background: linear-gradient(to bottom, #e6e6e6 5%, #575757 100%);
     background-color: #e6e6e6;
     border-radius: 30px;
-    border: none; /* Set border to none */
+    border: none;
     display: block;
     cursor: none;
     color: #7a1a7a;
@@ -39,7 +39,7 @@ header {
     height: 30px;
     text-align: center;
     line-height: 30px;
-    margin-top: 20px; /* Add margin to separate the button from the image */
+    margin-top: 20px;
 }
 
 .myButton:hover {
