@@ -1,5 +1,6 @@
 body {
-    background-color: #10002e; 
+    background-image: url("https://i.imgur.com/IALWiDr.jpeg");
+    background-size: 100% 120%;
     color: #7d7d7d; 
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -9,27 +10,32 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    margin: 50px;
+    margin: 100px 0;
 }
 
-header {
-    margin-bottom: 20px;
+header {  
+  margin-bottom: 20px;
 }
 
 .magical-title {
     font-family: 'Mystery Quest', cursive; 
     color: #9370DB; 
-    margin-top: 60px;
     font-size: 6em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #7a1a7a; 
+    padding: 30px;
+    display: inline-block; 
+    border-radius: 50px; 
+    margin-top: 150px;
 }
 
 .myButton {
-    background: linear-gradient(to bottom, #e6e6e6 5%, #575757 100%);
+    background: linear-gradient(to bottom, #e6e6e6 50%, #575757 100%);
     background-color: #e6e6e6;
-    border-radius: 30px;
+    border-radius: 15px; 
     border: none;
     display: block;
-    cursor: none;
+    cursor: pointer; 
     color: #7a1a7a;
     font-family: 'Mystery Quest', cursive;
     font-size: 15px;
@@ -40,6 +46,10 @@ header {
     text-align: center;
     line-height: 30px;
     margin-top: 20px;
+}
+
+.myButton i {
+    font-size: 1.5em;
 }
 
 .myButton:hover {
@@ -57,17 +67,55 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh; 
+    height: 60vh; 
+    margin-bottom: 20px;
 }
 
 .centered-image {
     max-width: 100%;
     max-height: 100%;
     border: 5px solid;
-    color: purple;
-    border-radius: 10px; 
+    color: #7d7d7d;
+    border-radius: 15px; 
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.child-element {
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.child-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 footer {
     margin-top: 20px;
+}
+
+.title-box, .paragraph-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #7a1a7a;
+    padding: 20px;
+    display: center;
+    border-radius: 15px; 
+}
+
+.paragraph-box {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em; 
+    margin-top: 50px;  
 }
