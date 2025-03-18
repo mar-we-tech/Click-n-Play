@@ -1,4 +1,5 @@
-# 🎲 **Randomizer Generator League of Legends Website** 🌐
+# 🎲 **Click'n'Play** 🌐
+#**Randomizer Generator League of Legends Website**
 
 Welcome to my **Randomizer Generator for League of Legends Project** that includes lanes, roles and items etc.! 🎉  
 I'm building a **website** for a **fast, practical, and visually appealing Randomizer for League of Legends**. 🧑‍💻💡
