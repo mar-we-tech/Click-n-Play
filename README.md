@@ -17,7 +17,7 @@ Whether you're playing a game, needing the trollness in the game (no ranked game
 
 ## 🔧 **Goal: Features & Highlights**
 
-- **Random selection from lists**: You can easily click on the picture one which you want to be randomize, and the generator will randomize it. 📋➡️🎲
+- **Random selection from lists**: You can easily click on the element (in that case buttons, icons etc.) one which you want to be randomize, and the generator will randomize it. 📋➡️🎲
 - **Simple and fast**: No complicated setup! Just click your desires, and the randomizer does the rest! 🔄⚡
 
 ## 👨‍💻 **Technologies & Tools**
