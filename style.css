@@ -9,12 +9,16 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    margin: 50px;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 .magical-title {
     font-family: 'Mystery Quest', cursive; 
     color: #9370DB; 
-    text-align: center;
     margin-top: 60px;
     font-size: 6em;
 }
@@ -23,9 +27,9 @@ body {
     background: linear-gradient(to bottom, #e6e6e6 5%, #575757 100%);
     background-color: #e6e6e6;
     border-radius: 30px;
-    border: 5px solid #453445;
+    border: none; /* Set border to none */
     display: block;
-    cursor: pointer;
+    cursor: none;
     color: #7a1a7a;
     font-family: 'Mystery Quest', cursive;
     font-size: 15px;
@@ -35,11 +39,11 @@ body {
     height: 30px;
     text-align: center;
     line-height: 30px;
-    margin: 20px auto 0;
+    margin-top: 20px; /* Add margin to separate the button from the image */
 }
 
 .myButton:hover {
-    background: linear-gradient(to bottom, #575757 5%, #e6e6e6 100%);
+    background: linear-gradient(to bottom, #575757 10%, #e6e6e6 100%);
     background-color: #575757;
 }
 
@@ -50,6 +54,7 @@ body {
 
 .image-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh; 
@@ -58,7 +63,11 @@ body {
 .centered-image {
     max-width: 100%;
     max-height: 100%;
-    border: 5px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 5px solid;
+    color: purple;
     border-radius: 10px; 
+}
+
+footer {
+    margin-top: 20px;
 }
