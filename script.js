@@ -1,8 +1,14 @@
 let pinnedRole = 'everything'; 
+let pinnedLane = 'everything'; 
 
 function pinRole(role) {
   pinnedRole = role;
   console.log(`Pinned role: ${pinnedRole}`);
+}
+
+function pinLane(lane) {
+  pinnedLane = lane;
+  console.log(`Pinned lane: ${pinnedLane}`);
 }
 
 function rerollImage() {
@@ -893,10 +899,16 @@ function rerollImage() {
       'https://lolfinder.net/images/league/champions/card/Zyra_0.webp'
     ]
   
-  };
-
-  const selectedImages = images[pinnedRole];
-  const randomIndex = Math.floor(Math.random() * selectedImages.length);
-  const randomImage = selectedImages[randomIndex];
-  document.getElementById('random-image').src = randomImage;
+};
+const selectedRoleImages = images[pinnedRole];
+  const selectedLaneImages = images[pinnedLane];
+  const combinedImages = selectedRoleImages.filter(value => selectedLaneImages.includes(value));
+  
+  if (combinedImages.length > 0) {
+    const randomIndex = Math.floor(Math.random() * combinedImages.length);
+    const randomImage = combinedImages[randomIndex];
+    document.getElementById('random-image').src = randomImage;
+  } else {
+    console.log('Ops! Sorry, reroll me again!');
+  }
 }
