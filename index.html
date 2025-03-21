@@ -3,46 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The best Randomize Generator for fun. Everything is here! Like champions, items, runes etc! Visit for more!">
-  <meta name="keywords" content="League of Legends, Randomize, Randomize Generator, Champion, Champions, LoL, lol, troll lol, lol troll, lol random, lol build, lol guide">
+  <meta name="description" content="A Randomizer Generator for League of Legends. Free, fast, and fun!">
+  <meta name="keywords" content="League of Legends, Randomize, Champion, LoL, Troll, Build, Guide">
   <meta name="author" content="marwe-tech">
-  <title>PickNPlay</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap">
+  <title>Click'n'Play</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1 class="magical-title title-box">Click'N'Play</h1>
-    <h1 class="paragraph-box">Are you good enough to troll but still carry the whole game? Show me what you've got!</h1>
+    <h1 class="magical-title title-box">Click'n'Play</h1>
+    <p class="paragraph-box">Troll your teammates and carry the game! Prove your skills with a random champion</p>
+    <p class="paragraph-box">Let's show them!</p>
   </header>
   <main>
-    <div class="image-and-icons">
-      <div class="flex-container left-container">
-        <div class="child-element" onclick="pinRole('allroles')"><img src="https://i.imgur.com/Yzr3J90.jpeg" alt="All Roles Icon"></div>
-        <div class="child-element" onclick="pinRole('fighter')"><img src="https://i.imgur.com/FvppVEf.jpeg" alt="Fighter Icon"></div>
-        <div class="child-element" onclick="pinRole('tank')"><img src="https://i.imgur.com/0qY9Qm0.jpeg" alt="Tank Icon"></div>
-        <div class="child-element" onclick="pinRole('assassin')"><img src="https://i.imgur.com/ul3K098.jpeg" alt="Assassin Icon"></div>
-        <div class="child-element" onclick="pinRole('mage')"><img src="https://i.imgur.com/cqU6Cby.jpeg" alt="Mage Icon"></div>
-        <div class="child-element" onclick="pinRole('marksman')"><img src="https://i.imgur.com/naE55IR.jpeg" alt="Marksman Icon"></div>
-        <div class="child-element" onclick="pinRole('support')"><img src="https://lolfinder.net/images/league/champions/card/Alistar_0.webp" alt="Support Icon"></div>
+    <div class="container">
+      <div class="dropdown">
+        <button class="dropbtn" aria-label="Select Role">Roles</button>
+        <div id="roles-dropdown" class="dropdown-content">
+          <a href="#" data-role="everything">All Roles</a>
+          <a href="#" data-role="Fighter">Fighter</a>
+          <a href="#" data-role="Tank">Tank</a>
+          <a href="#" data-role="Mage">Mage</a>
+          <a href="#" data-role="Assassin">Assassin</a>
+          <a href="#" data-role="Marksman">Marksman</a>
+          <a href="#" data-role="Support">Support</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" aria-label="Select Lane">Lane</button>
+        <div id="lanes-dropdown" class="dropdown-content">
+          <a href="#" data-lane="everything">All Lanes</a>
+          <a href="#" data-lane="Top">Toplane</a>
+          <a href="#" data-lane="Jungle">Jungle</a>
+          <a href="#" data-lane="Mid">Midlane</a>
+          <a href="#" data-lane="Bot">Botlane</a>
+        </div>
       </div>
       <div class="image-container">
-        <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="Reroll Me Wallpaper">
-        <a href="#" class="myButton" onclick="rerollImage()"><i class="fa-solid fa-dice"></i></a>
-      </div>
-      <div class="flex-container right-container">
-        <div class="child-element" onclick="pinRole('everything')"><img src="https://i.imgur.com/xRlUdOx.jpeg" alt="Everything Icon"></div>
-        <div class="child-element" onclick="pinRole('toplane')"><img src="https://i.imgur.com/sOGsl1G.jpeg" alt="Toplane Icon"></div>
-        <div class="child-element" onclick="pinRole('jungle')"><img src="https://i.imgur.com/C0kIg89.jpeg" alt="Jungle Icon"></div>
-        <div class="child-element" onclick="pinRole('midlane')"><img src="https://i.imgur.com/hQHCr9p.jpeg" alt="Midlane Icon"></div>
-        <div class="child-element" onclick="pinRole('botlane')"><img src="https://i.imgur.com/6xRr06B.jpeg" alt="Botlane Icon"></div>
+        <div class="share-section">
+          <p class="share-text">Prove it to your teammates by sharing the link!</p>
+          <input type="text" id="share-link" readonly placeholder="Share your champion">
+          <button class="copy-button" onclick="copyShareLink()">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="Random Champion">
+        <p id="champion-name" class="champion-name"></p>
+        <button class="myButton" aria-label="Reroll Champion">
+          <i class="fa-solid fa-dice"></i>
+        </button>
       </div>
     </div>
   </main>
   <footer>
-    <p>&copy; 2025 Click'N'Play. All rights reserved.</p>
+    <p>© 2025 Click'n'Play. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
