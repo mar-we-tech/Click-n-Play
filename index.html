@@ -14,7 +14,7 @@
 <body>
   <header>
     <h1 class="magical-title title-box">Click'n'Play</h1>
-    <p class="paragraph-box">Troll your teammates and carry the game! Prove your skills with a random champion</p>
+    <p class="paragraph-box">Troll your teammates and carry the game! Prove your skills with a random champion and build!</p>
     <p class="paragraph-box">Let's show them!</p>
   </header>
   <main>
@@ -41,24 +41,48 @@
           <a href="#" data-lane="Bot">Botlane</a>
         </div>
       </div>
-      <div class="image-container">
-        <div class="share-section">
-          <p class="share-text">Prove it to your teammates by sharing the link!</p>
-          <input type="text" id="share-link" readonly placeholder="Share your champion">
-          <button class="copy-button" onclick="copyShareLink()">
-            <i class="fa-solid fa-copy"></i>
+      <div class="main-content">
+        <div class="image-container">
+          <div class="share-section">
+            <p class="share-text">Prove it to your teammates by sharing the link!</p>
+            <input type="text" id="share-link" readonly placeholder="Share your champion">
+            <button class="copy-button" onclick="copyShareLink()">
+              <i class="fa-solid fa-copy"></i>
+            </button>
+          </div>
+          <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="Random Champion">
+          <p id="champion-name" class="champion-name"></p>
+          <button id="reroll-champion" class="myButton" aria-label="Reroll Champion">
+            <i class="fa-solid fa-dice"></i> Reroll Champion
           </button>
         </div>
-        <img id="random-image" class="centered-image" src="https://i.imgur.com/yyoONL5.jpeg" alt="Random Champion">
-        <p id="champion-name" class="champion-name"></p>
-        <button class="myButton" aria-label="Reroll Champion">
-          <i class="fa-solid fa-dice"></i>
-        </button>
+        <div class="item-container">
+          <div class="dropdown">
+            <button class="dropbtn" aria-label="Select Playstyle">Playstyle</button>
+            <div id="playstyle-dropdown" class="dropdown-content">
+              <a href="#" data-playstyle="everything">All Playstyles</a>
+              <a href="#" data-playstyle="AD">AD</a>
+              <a href="#" data-playstyle="AP">AP</a>
+              <a href="#" data-playstyle="Tank">Tank</a>
+            </div>
+          </div>
+          <div class="item-display">
+            <div class="box" id="bootSlot"><span>Boot</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+            <div class="box" id="itemSlot1"><span>Item</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+            <div class="box" id="itemSlot2"><span>Item</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+            <div class="box" id="itemSlot3"><span>Item</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+            <div class="box" id="itemSlot4"><span>Item</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+            <div class="box" id="itemSlot5"><span>Item</span><img src="https://i.imgur.com/bNdKwD5.png" alt="Question Mark"></div>
+          </div>
+          <button id="reroll-items" class="myButton reroll-button">
+            <i class="fa-solid fa-dice"></i> Reroll Items
+          </button>
+        </div>
       </div>
     </div>
   </main>
   <footer>
-    <p>© 2025 Click'n'Play. All rights reserved.</p>
+    <p>© 2025 Click'n'Play by MarWe. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
