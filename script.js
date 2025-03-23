@@ -331,9 +331,6 @@ document.addEventListener('DOMContentLoaded', () => {
       updateShareLink();
     }
   }
-
-  rerollChampion();
-  rerollItems();
 });
 
 function toggleDropdown(dropdownId) {
@@ -362,7 +359,7 @@ function rerollChampion() {
     console.error("Cannot reroll: Champions list is undefined or empty");
     const imageElement = document.getElementById('random-image');
     const nameElement = document.getElementById('champion-name');
-    imageElement.src = 'https://i.imgur.com/d7tDZ0t.jpeg';
+    imageElement.src = 'https://i.imgur.com/fkhmdaF.jpeg';
     imageElement.alt = 'Error';
     nameElement.textContent = 'Error: No Champions Available';
     return;
@@ -389,7 +386,7 @@ function rerollChampion() {
     const randomChampion = filteredChampions[Math.floor(Math.random() * filteredChampions.length)];
     if (!randomChampion || !randomChampion.image || !randomChampion.name) {
       console.error("Invalid champion data:", randomChampion);
-      imageElement.src = 'https://i.imgur.com/d7tDZ0t.jpeg';
+      imageElement.src = 'https://i.imgur.com/fkhmdaF.jpeg';
       imageElement.alt = 'Error';
       nameElement.textContent = 'Error: Invalid Champion';
       return;
@@ -402,7 +399,7 @@ function rerollChampion() {
     currentChampion = randomChampion;
     updateShareLink();
   } else {
-    imageElement.src = 'https://i.imgur.com/d7tDZ0t.jpeg';
+    imageElement.src = 'https://i.imgur.com/fkhmdaF.jpeg';
     imageElement.alt = 'No Champion Found';
     nameElement.textContent = 'No match found';
     currentChampion = null;
@@ -412,7 +409,8 @@ function rerollChampion() {
 
 function updateShareLink() {
   const shareLinkInput = document.getElementById('share-link');
-  if (currentChampion) {
+  if (currentChampion) 
+  2  	        ^^^^^^if (currentItems) }
     const baseUrl = window.location.origin + window.location.pathname;
     const shareUrl = `${baseUrl}?champion=${encodeURIComponent(currentChampion.name)}`;
     shareLinkInput.value = shareUrl;
@@ -425,7 +423,7 @@ function copyShareLink() {
   const shareLinkInput = document.getElementById('share-link');
   shareLinkInput.select();
   navigator.clipboard.writeText(shareLinkInput.value)
-    .then(() => alert('Link copied to clipboard!'))
+    .then(() => alert('Link copied!'))
     .catch(err => {
       console.error('Failed to copy link:', err);
       alert('Failed to copy link. Please copy it manually.');
@@ -517,4 +515,15 @@ function rerollItems() {
       img.style.display = 'none';
     }
   });
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    const button = document.querySelector(".toggle-button");
+    if (document.body.classList.contains("dark-mode")) {
+        button.textContent = "Light Mode";
+    } else {
+        button.textContent = "Dark Mode";
+    }
 }
