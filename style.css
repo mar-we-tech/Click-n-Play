@@ -51,20 +51,21 @@ footer {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   max-width: 1200px;
 }
 
 .dropdown {
   position: relative;
+  margin-top: 125px;
 }
 
 .dropbtn {
   background-color: purple;
   color: #ffffff;
   font-family: 'Amatic SC', cursive;
-  padding: 15px 25px;
+  padding: 5px 40px;
   font-size: 2em;
   border: none;
   border-radius: 25px;
@@ -79,7 +80,7 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #8773a1;
+  background-color: #880088;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
@@ -92,7 +93,7 @@ footer {
 }
 
 .dropdown-content a {
-  color: purple;
+  color: black;
   padding: 10px 15px;
   text-decoration: none;
   font-family: 'Amatic SC', cursive;
@@ -103,6 +104,7 @@ footer {
 
 .dropdown-content a:hover {
   background-color: HotPink;
+  border-radius: 20px;
 }
 
 .main-content {
@@ -133,7 +135,7 @@ footer {
 .champion-name {
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
-  color: #9370DB;
+  color: #2c2141;
   margin: 0;
 }
 
@@ -170,7 +172,7 @@ footer {
 .share-text {
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
-  color: #9370DB;
+  color: #2c2141;
   text-shadow: 0 0 5px rgba(147, 112, 219, 0.5);
   margin: 0;
 }
@@ -283,4 +285,24 @@ footer {
     width: 60px;
     height: 60px;
   }
+}
+
+
+
+body.dark-mode {
+    background-image: url("https://www.solidbackgrounds.com/images/3600x3600/3600x3600-black-solid-color-background.jpg");
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: grey;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.toggle-button:hover {
+    background-color: white;
 }
