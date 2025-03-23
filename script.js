@@ -409,8 +409,7 @@ function rerollChampion() {
 
 function updateShareLink() {
   const shareLinkInput = document.getElementById('share-link');
-  if (currentChampion) 
-  2  	        ^^^^^^if (currentItems) }
+  if (currentChampion) {
     const baseUrl = window.location.origin + window.location.pathname;
     const shareUrl = `${baseUrl}?champion=${encodeURIComponent(currentChampion.name)}`;
     shareLinkInput.value = shareUrl;
